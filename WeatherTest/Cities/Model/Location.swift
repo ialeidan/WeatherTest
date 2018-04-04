@@ -8,16 +8,8 @@
 
 import Foundation
 
-struct Location {
+struct Location: Decodable {
     let latitude: Double
     let longitude: Double
     
-    init?(dict: [String: Any]) {
-        guard let latitude = dict["lat"] as? Double,
-            let longitude = dict["lon"] as? Double
-            else { return nil }
-        
-        self.latitude = latitude
-        self.longitude = longitude
-    }
 }
