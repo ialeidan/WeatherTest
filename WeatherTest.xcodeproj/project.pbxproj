@@ -128,9 +128,9 @@
 		3F16117F207507B7005255B8 /* WeatherTest */ = {
 			isa = PBXGroup;
 			children = (
-				3F1611B320751CFC005255B8 /* Users */,
+				678B75CE2075561B00B5BDBC /* Weather */,
+				678B75C92075551E00B5BDBC /* Users */,
 				3F1611B420751D06005255B8 /* Cities */,
-				3F1611B520751D14005255B8 /* Weather */,
 				3F1611AE207507C5005255B8 /* Global */,
 				3F161184207507B7005255B8 /* Main.storyboard */,
 				3F16118C207507B7005255B8 /* Info.plist */,
@@ -199,16 +199,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		3F1611B320751CFC005255B8 /* Users */ = {
-			isa = PBXGroup;
-			children = (
-				3F1611B620751D32005255B8 /* Model */,
-				3F1611B820751D44005255B8 /* View */,
-				3F1611B720751D3B005255B8 /* Controller */,
-			);
-			path = Users;
-			sourceTree = "<group>";
-		};
 		3F1611B420751D06005255B8 /* Cities */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,37 +207,6 @@
 				3F1611B920751D4C005255B8 /* Controller */,
 			);
 			path = Cities;
-			sourceTree = "<group>";
-		};
-		3F1611B520751D14005255B8 /* Weather */ = {
-			isa = PBXGroup;
-			children = (
-				3F1611BE20751D6C005255B8 /* Model */,
-				3F1611BD20751D68005255B8 /* View */,
-				3F1611BC20751D62005255B8 /* Controller */,
-			);
-			path = Weather;
-			sourceTree = "<group>";
-		};
-		3F1611B620751D32005255B8 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		3F1611B720751D3B005255B8 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		3F1611B820751D44005255B8 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		3F1611B920751D4C005255B8 /* Controller */ = {
@@ -274,25 +233,82 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		3F1611BC20751D62005255B8 /* Controller */ = {
+		678B75C92075551E00B5BDBC /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				678B75CA2075552700B5BDBC /* Model */,
+				678B75CB2075552E00B5BDBC /* View */,
+				678B75CC2075553400B5BDBC /* Controller */,
+				678B75CD2075553B00B5BDBC /* Services */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		678B75CA2075552700B5BDBC /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Controller;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		3F1611BD20751D68005255B8 /* View */ = {
+		678B75CB2075552E00B5BDBC /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		3F1611BE20751D6C005255B8 /* Model */ = {
+		678B75CC2075553400B5BDBC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		678B75CD2075553B00B5BDBC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		678B75CE2075561B00B5BDBC /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				678B75D22075564A00B5BDBC /* View */,
+				678B75D12075563600B5BDBC /* Model */,
+				678B75D02075562B00B5BDBC /* Controller */,
+				678B75CF2075562200B5BDBC /* Services */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		678B75CF2075562200B5BDBC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		678B75D02075562B00B5BDBC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		678B75D12075563600B5BDBC /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		678B75D22075564A00B5BDBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		77EFBE1F2F4CA34103E0F4B1 /* Pods */ = {
@@ -771,13 +787,16 @@
 			baseConfigurationReference = BC4BE5FA0A840B29F91D4E56 /* Pods-WeatherTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 578674KY68;
+				DEVELOPMENT_TEAM = A7SKK5Y7GD;
 				INFOPLIST_FILE = WeatherTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.WeatherTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -788,13 +807,16 @@
 			baseConfigurationReference = AB9EED9182E8E02177E97334 /* Pods-WeatherTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 578674KY68;
+				DEVELOPMENT_TEAM = A7SKK5Y7GD;
 				INFOPLIST_FILE = WeatherTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.WeatherTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
