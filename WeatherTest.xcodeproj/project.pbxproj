@@ -97,11 +97,9 @@
 		3F16117F207507B7005255B8 /* WeatherTest */ = {
 			isa = PBXGroup;
 			children = (
-				3F161180207507B7005255B8 /* AppDelegate.swift */,
+				3F1611AE207507C5005255B8 /* Global */,
 				3F161182207507B7005255B8 /* ViewController.swift */,
 				3F161184207507B7005255B8 /* Main.storyboard */,
-				3F161187207507B7005255B8 /* Assets.xcassets */,
-				3F161189207507B7005255B8 /* LaunchScreen.storyboard */,
 				3F16118C207507B7005255B8 /* Info.plist */,
 			);
 			path = WeatherTest;
@@ -123,6 +121,49 @@
 				3F1611A2207507B7005255B8 /* Info.plist */,
 			);
 			path = WeatherTestUITests;
+			sourceTree = "<group>";
+		};
+		3F1611AE207507C5005255B8 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				3F1611B0207507F9005255B8 /* Model */,
+				3F1611AF207507F0005255B8 /* View */,
+				3F1611B220750809005255B8 /* Controller */,
+				3F1611B1207507FC005255B8 /* Service */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		3F1611AF207507F0005255B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F161189207507B7005255B8 /* LaunchScreen.storyboard */,
+				3F161187207507B7005255B8 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3F1611B0207507F9005255B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3F1611B1207507FC005255B8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Service;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		3F1611B220750809005255B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3F161180207507B7005255B8 /* AppDelegate.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
