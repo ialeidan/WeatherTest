@@ -3,19 +3,7 @@
 import Foundation
 import Moya
 
-// MARK: - Provider setup
-
-private func JSONResponseDataFormatter(_ data: Data) -> Data {
-    do {
-        let dataAsJSON = try JSONSerialization.jsonObject(with: data)
-        let prettyData =  try JSONSerialization.data(withJSONObject: dataAsJSON, options: .prettyPrinted)
-        return prettyData
-    } catch {
-        return data // fallback to original data if it can't be serialized.
-    }
-}
-
-let cityProvider = MoyaProvider<OpenWeathermap>(plugins: [NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter)])
+let cityProvider = MoyaProvider<OpenWeathermap>()
 
 // MARK: - Provider support
 
@@ -80,15 +68,4 @@ public func url(_ route: TargetType) -> String {
     return route.baseURL.appendingPathComponent(route.path).absoluteString
 }
 
-// MARK: - Response Handlers
-
-extension Moya.Response {
-    func mapNSArray() throws -> NSArray {
-        let any = try self.mapJSON()
-        guard let array = any as? NSArray else {
-            throw MoyaError.jsonMapping(self)
-        }
-        return array
-    }
-}
 
