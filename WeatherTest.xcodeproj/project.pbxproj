@@ -17,6 +17,7 @@
 		3F1611C020751ECD005255B8 /* CitiesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1611BF20751ECD005255B8 /* CitiesCell.swift */; };
 		3F1611C220751F6A005255B8 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1611C120751F6A005255B8 /* City.swift */; };
 		3F1611C4207521D1005255B8 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1611C3207521D1005255B8 /* Location.swift */; };
+		678B75D42075570400B5BDBC /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678B75D32075570400B5BDBC /* WeatherService.swift */; };
 		B1B74D75A9B19100050EA50C /* Pods_WeatherTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CEF16AA1B82559834D19E2C /* Pods_WeatherTestTests.framework */; };
 		F0F551C6388E9D7C1AE5DD08 /* Pods_WeatherTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F2D8057C39CE842924752F /* Pods_WeatherTestUITests.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		3F1611C120751F6A005255B8 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		3F1611C3207521D1005255B8 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		542E013D872F520A25C3D54A /* Pods-WeatherTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherTestTests/Pods-WeatherTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		678B75D32075570400B5BDBC /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		69DFAB47081384EC631D2A6D /* Pods-WeatherTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherTestUITests/Pods-WeatherTestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		78F2D8057C39CE842924752F /* Pods_WeatherTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB9EED9182E8E02177E97334 /* Pods-WeatherTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherTest/Pods-WeatherTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 		678B75CF2075562200B5BDBC /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				678B75D32075570400B5BDBC /* WeatherService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -504,10 +507,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WeatherTestTests/Pods-WeatherTestTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -618,6 +625,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F1611C020751ECD005255B8 /* CitiesCell.swift in Sources */,
+				678B75D42075570400B5BDBC /* WeatherService.swift in Sources */,
 				3F161181207507B7005255B8 /* AppDelegate.swift in Sources */,
 				3F1611C4207521D1005255B8 /* Location.swift in Sources */,
 				3F1611C220751F6A005255B8 /* City.swift in Sources */,
