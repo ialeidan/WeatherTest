@@ -10,7 +10,7 @@ target 'WeatherTest' do
   target 'WeatherTestTests' do
     inherit! :search_paths
     # Pods for testing
-    pod 'Moya'
+    pod 'Alamofire', '~> 4.7'
   end
 
   target 'WeatherTestUITests' do
