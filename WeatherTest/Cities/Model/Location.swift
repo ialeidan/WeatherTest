@@ -9,7 +9,7 @@
 import Foundation
 
 struct Location: Decodable {
-    let latitude: Double
-    let longitude: Double
+    let latitude: Double?
+    let longitude: Double?
     
 }
